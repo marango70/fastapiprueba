@@ -1,27 +1,56 @@
-# Deploy FastAPI on Render
+# Proyecto Individual 1
+Henry DataPT9 
+</p>
+Maria Isabel Arango
 
-Use this repo as a template to deploy a Python [FastAPI](https://fastapi.tiangolo.com) service on Render.
+## **Descripción del Proyecto**
 
-See https://render.com/docs/deploy-fastapi or follow the steps below:
+## Introducción:
 
-## Manual Steps
+En este proyecto tomo el roll de **`Data Scientist`** en una start-up que provee servicios de agregación de plataformas de streaming. 
+Los datos no cuentan con la madurez necesaria por lo que, para poder realizar el proyecto, se requiere un trabajpásoo previo de limpieza y análisis.
+El objetivo de este proyecto es crear un modelo de recomendación de películas con la información suministrada.
 
-1. You may use this repository directly or [create your own repository from this template](https://github.com/render-examples/fastapi/generate) if you'd like to customize the code.
-2. Create a new Web Service on Render.
-3. Specify the URL to your new repository or this repository.
-4. Render will automatically detect that you are deploying a Python service and use `pip` to download the dependencies.
-5. Specify the following as the Start Command.
+A continuación se explica el paso a paso del desarrollo de este proyecto.
 
-    ```shell
-    uvicorn main:app --host 0.0.0.0 --port $PORT
-    ```
+## Desarrollo:
 
-6. Click Create Web Service.
+1. **Limpieza de Datos:**
+   En este paso se realizó el cargue y análisis de datos de los dataset movies_dataset.csv y credits.csv, con el fin de limpiarlos y dejarlos listos para su uso.
+   </p>
+   Se toman algunas decisiones impórtantes:
+   </p>
+   a. Se realizan las acciones sugeridas en el enunciado del proyecto (desanidar información de columnas, eliminar columnas no utiles, crear columna con el retorno de la inversión, entre       otros)
+   </p>
+   b. Se eliminan las columnas cuyos valores nulos sean superiores al 50% de los datos.
+   </p>
+   c. Se eliminan duplicados.
+   </p>
+   d. Se exportan los archivos a formato .json para usarlos posteriormente en la API.
+   </p>
+2. **Analisis de Datos EDA:** Se realiza un análisis gráfico y de las características de los datos de los datasets.
+   </p>
+:eyes:    El código python de limpieza y análisis de datos corresponde al archivo **`Data Engineering.ipynb`**   :eyes:
+</p>
+Se exportan los datasets resultantes en formato .json y .parquet con en fin de evaluar posteriormente el mejor formato de trabajo.
+Los archivos resultantes son:
 
-Or simply click:
+**`data_movies.json`**
+**`data_credits.json`**
+**`data_movies.parquet`**
+**`data_credits.parquet`**
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/render-examples/fastapi)
 
-## Thanks
+3. 
 
-Thanks to [Harish](https://harishgarg.com) for the [inspiration to create a FastAPI quickstart for Render](https://twitter.com/harishkgarg/status/1435084018677010434) and for some sample code!
+5. 
+ :smirk:
+ :eyes:
+ :weary:
+
+El ciclo de vida de un proyecto de Machine Learning debe contemplar desde el tratamiento y recolección de los datos (Data Engineer stuff) hasta el entrenamiento y mantenimiento del modelo de ML según llegan nuevos datos.
+
+
+## Rol a desarrollar
+
+ **`Data Scientist`** 
